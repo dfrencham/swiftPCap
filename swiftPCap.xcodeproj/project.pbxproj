@@ -1,0 +1,265 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3087744B1BF2996F005E5A85 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3087744A1BF2996F005E5A85 /* main.swift */; };
+		308774551BF2B04C005E5A85 /* libpcap.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 308774541BF2B04C005E5A85 /* libpcap.tbd */; };
+		3087745D1BFE735A005E5A85 /* PacketCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3087745C1BFE735A005E5A85 /* PacketCapture.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		308774451BF2996F005E5A85 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		308774471BF2996F005E5A85 /* swiftPCap */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swiftPCap; sourceTree = BUILT_PRODUCTS_DIR; };
+		3087744A1BF2996F005E5A85 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = main.swift; path = classes/main.swift; sourceTree = SOURCE_ROOT; };
+		308774511BF299A2005E5A85 /* swifttest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "swifttest-Bridging-Header.h"; path = "classes/swifttest-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		308774541BF2B04C005E5A85 /* libpcap.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libpcap.tbd; path = usr/lib/libpcap.tbd; sourceTree = SDKROOT; };
+		3087745C1BFE735A005E5A85 /* PacketCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PacketCapture.swift; path = classes/PacketCapture.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		308774441BF2996F005E5A85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				308774551BF2B04C005E5A85 /* libpcap.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3087743E1BF2996F005E5A85 = {
+			isa = PBXGroup;
+			children = (
+				308774541BF2B04C005E5A85 /* libpcap.tbd */,
+				308774491BF2996F005E5A85 /* classes */,
+				308774481BF2996F005E5A85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		308774481BF2996F005E5A85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				308774471BF2996F005E5A85 /* swiftPCap */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		308774491BF2996F005E5A85 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				3087744A1BF2996F005E5A85 /* main.swift */,
+				308774511BF299A2005E5A85 /* swifttest-Bridging-Header.h */,
+				3087745C1BFE735A005E5A85 /* PacketCapture.swift */,
+			);
+			name = classes;
+			path = swiftPCap;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		308774461BF2996F005E5A85 /* swiftPCap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3087744E1BF2996F005E5A85 /* Build configuration list for PBXNativeTarget "swiftPCap" */;
+			buildPhases = (
+				308774431BF2996F005E5A85 /* Sources */,
+				308774441BF2996F005E5A85 /* Frameworks */,
+				308774451BF2996F005E5A85 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = swiftPCap;
+			productName = swiftPCap;
+			productReference = 308774471BF2996F005E5A85 /* swiftPCap */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3087743F1BF2996F005E5A85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Danny Frencham";
+				TargetAttributes = {
+					308774461BF2996F005E5A85 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 308774421BF2996F005E5A85 /* Build configuration list for PBXProject "swiftPCap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3087743E1BF2996F005E5A85;
+			productRefGroup = 308774481BF2996F005E5A85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				308774461BF2996F005E5A85 /* swiftPCap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		308774431BF2996F005E5A85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3087745D1BFE735A005E5A85 /* PacketCapture.swift in Sources */,
+				3087744B1BF2996F005E5A85 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3087744C1BF2996F005E5A85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3087744D1BF2996F005E5A85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3087744F1BF2996F005E5A85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = swiftPCap;
+				SWIFT_OBJC_BRIDGING_HEADER = "classes/swifttest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		308774501BF2996F005E5A85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = swiftPCap;
+				SWIFT_OBJC_BRIDGING_HEADER = "classes/swifttest-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		308774421BF2996F005E5A85 /* Build configuration list for PBXProject "swiftPCap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3087744C1BF2996F005E5A85 /* Debug */,
+				3087744D1BF2996F005E5A85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3087744E1BF2996F005E5A85 /* Build configuration list for PBXNativeTarget "swiftPCap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3087744F1BF2996F005E5A85 /* Debug */,
+				308774501BF2996F005E5A85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3087743F1BF2996F005E5A85 /* Project object */;
+}
