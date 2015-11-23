@@ -30,11 +30,11 @@ class PacketCapture {
     // doPacketCapture - attempts to capture some packets for basic analysis
     // device: the osx reference to the network
     //          device you want to capture
-    func doPacketCapture(device: String) {
+    func doPacketCapture(device: String, numberOfPackets: Int32) {
         var error: UnsafeMutablePointer<CChar>
         error = nil
         
-        print("Opening " + device)
+        printMessageToConsole("Opening " + device)
         
         // create a new pcap session via pcap.h
         let pcapSession = pcap_create(device,error)
@@ -45,10 +45,12 @@ class PacketCapture {
         handleResult(pcap_set_rfmon(pcapSession, 1), message: "Couldn't set monitor mode")
         handleResult(pcap_activate(pcapSession), message: "Error activating")
         
+        printMessageToConsole("Capturing " + numberOfPackets.description + " packets (please wait, filling buffer....) ")
+        
         // Call back to pcap_loop in pcap.h
         // This is where the magic happens. We pass a closure as the call 
         // back (the packet argument)
-        pcap_loop(pcapSession, 0,
+        pcap_loop(pcapSession, numberOfPackets,
             {
                 (args: UnsafeMutablePointer<u_char>,
                  pkthdr:UnsafePointer<pcap_pkthdr>,
@@ -61,6 +63,9 @@ class PacketCapture {
                         pa.Process()
             },
             nil)
+        
+        printMessageToConsole("Capture complete")
+        exit(0)
     }
 
     func printErrorToConsole(output: String) {
@@ -71,11 +76,11 @@ class PacketCapture {
         // red     31   // magenta 35
         // green   32   // cyan    36
         // yellow  33   // white   37
-        print("\u{001B}[0;31m Error: " + output)
+        print("\u{001B}[0;31mError: " + output)
     }
     
     func printMessageToConsole(output: String) {
-        print("\u{001B}[0;37m " + output)
+        print("\u{001B}[0;37m" + output)
     }
     
     func handleError(error: UnsafeMutablePointer<CChar>) {

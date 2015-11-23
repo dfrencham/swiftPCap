@@ -27,7 +27,7 @@
 /* Begin PBXFileReference section */
 		308774471BF2996F005E5A85 /* swiftPCap */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swiftPCap; sourceTree = BUILT_PRODUCTS_DIR; };
 		3087744A1BF2996F005E5A85 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = main.swift; path = classes/main.swift; sourceTree = SOURCE_ROOT; };
-		308774511BF299A2005E5A85 /* swifttest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "swifttest-Bridging-Header.h"; path = "classes/swifttest-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		308774511BF299A2005E5A85 /* swiftPCap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "swiftPCap-Bridging-Header.h"; path = "classes/swiftPCap-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		308774541BF2B04C005E5A85 /* libpcap.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libpcap.tbd; path = usr/lib/libpcap.tbd; sourceTree = SDKROOT; };
 		3087745C1BFE735A005E5A85 /* PacketCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PacketCapture.swift; path = classes/PacketCapture.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -65,7 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				3087744A1BF2996F005E5A85 /* main.swift */,
-				308774511BF299A2005E5A85 /* swifttest-Bridging-Header.h */,
+				308774511BF299A2005E5A85 /* swiftPCap-Bridging-Header.h */,
 				3087745C1BFE735A005E5A85 /* PacketCapture.swift */,
 			);
 			name = classes;
@@ -223,7 +223,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = swiftPCap;
-				SWIFT_OBJC_BRIDGING_HEADER = "classes/swifttest-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "classes/swiftPCap-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -234,7 +234,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = swiftPCap;
-				SWIFT_OBJC_BRIDGING_HEADER = "classes/swifttest-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "classes/swiftPCap-Bridging-Header.h";
 			};
 			name = Release;
 		};
